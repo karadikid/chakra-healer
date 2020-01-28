@@ -30,8 +30,8 @@ class UserData(model.Model):
 class Conditions(model.Model):
     condition = models.CharField(max_length=20)
     primary_chakra = models.IntegerField()
-    secondary_chakra = models.IntegerField()
-    tertiary_chakra = models.IntegerField()
+    secondary_chakra = models.IntegerField(nulls=True)
+    tertiary_chakra = models.IntegerField(nulls=True)
     
     def __str__(self):
         return self.condition
