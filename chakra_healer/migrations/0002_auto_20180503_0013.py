@@ -4,27 +4,38 @@ from django.db import migrations
 
 
 def seed(apps, schema_editor):
-    House = apps.get_model('hogwarts', 'House')
-    Student = apps.get_model('hogwarts', 'Student')
-    # Houses
+    Chakras = apps.get_model('chakra_healer', 'Chakras')
+    Conditions = apps.get_model('chakra_healer', 'Conditions')
     
-    gryffindor = House(name = "Gryffindor", image_url = "https://i.pinimg.com/originals/ec/f1/85/ecf185bd2d3c5af42d089a36ba66542d.jpg")
-    gryffindor.save()
-    hufflepuff = House(name = "Hufflepuff", image_url = "http://images3.wikia.nocookie.net/__cb20111027164827/harrypotter/images/3/3f/H_final.jpg")
-    hufflepuff.save()
-    ravenclaw = House(name = "Ravenclaw", image_url = "http://images2.wikia.nocookie.net/__cb20111021043857/harrypotter/images/d/da/R_final.jpg")
-    ravenclaw.save()
-    slytherin = House(name = "Slytherin", image_url = "http://images3.wikia.nocookie.net/__cb20111027165214/harrypotter/images/d/da/S_final.jpg")
-    slytherin.save()
-    # Students
+    # Chakras
+    chakra1 = Chakras(english_name = 'Root', number = 1, sanskrit_name = 'Mulhadhara', color = 'Red',  note = 'A', sound = 'Ay Way', base_frequency = 432, octave_half = 216, octave_qtr = 108, description = 'The Root chakra represents grounding')
+    chakra1.save()
+
+    chakra2 = Chakras(english_name = 'Sacral', number = 2, sanskrit_name = 'Swadhistana', color = 'Orange',  note = 'B', sound = 'Ee Me', base_frequency = 480, octave_half = 240, octave_qtr = 120, description = 'The Sacral Chakra represents connection.')
+    chakra2.save()
+
+    chakra3 = Chakras(english_name = 'Solar Plexus', number = 3, sanskrit_name = 'Manipura', color = 'Yellow',  note = 'C', sound = 'Uuh Cup', base_frequency = 528, octave_half = 264, octave_qtr = 132, description = 'The Solar Plexus Chakra represents power.')
+    chakra3.save()
+
+    chakra4 = Chakras(english_name = 'Heart', number = 4, sanskrit_name = 'Anahata', color = 'Green',  note = 'D', sound = 'Eu You', base_frequency = 600, octave_half = 300, octave_qtr = 150, description = 'The Heart Chakra represents Union.')
+    chakra4.save()
+
+    chakra5 = Chakras(english_name = 'Throat', number = 5, sanskrit_name = 'Vishuddha', color = 'Blue',  note = 'E', sound = 'Oh Go', base_frequency = 672, octave_half = 336, octave_qtr = 168, description = 'The Throat Chakra respresents identity and voice.')
+    chakra5.save()
+
+    chakra6 = Chakras(english_name = 'Third Eye', number = 6, sanskrit_name = 'Ajna', color = 'Indigo',  note = 'F', sound = 'Ah Mah', base_frequency = 720, octave_half = 360, octave_qtr = 180, description = 'The Third Eye represents timeless vision.')
+    chakra6.save()
+
+    chakra7 = Chakras(english_name = 'Crown', number = 7, sanskrit_name = 'Sahasrara', color = 'Violet',  note = 'G', sound = 'I My', base_frequency = 768, octave_half = 384, octave_qtr = 192, description = 'The Crown Chakra represents divine oneness.')
+    chakra7.save()
+    
+    # Conditions
+
+    Condition(
+        name = 
+    )
     Student(name = "Harry Potter", image_url = "http://images1.wikia.nocookie.net/__cb20111110202524/harrypotter/images/thumb/d/d4/Dhharryroomhighreso.jpg/250px-Dhharryroomhighreso.jpg", house = gryffindor).save()
-    Student(name = "Ron Weasley", image_url = "http://images4.wikia.nocookie.net/__cb20090712085217/harrypotter/images/9/99/Ron_DH.PNG", house = gryffindor).save()
-    Student(name = "Hermione Granger", image_url = "http://images2.wikia.nocookie.net/__cb20120512155742/harrypotter/images/thumb/9/95/DeathlyPromo_Hermione.PNG/250px-DeathlyPromo_Hermione.PNG", house = gryffindor).save()
-
-    Student(name = "Luna Lovegood", image_url = "http://images1.wikia.nocookie.net/__cb20101113121321/harrypotter/images/thumb/4/49/Luna_profile.jpg/250px-Luna_profile.jpg", house = ravenclaw).save()
-    Student(name = "Cho Chang", image_url = "http://images3.wikia.nocookie.net/__cb20081103140303/harrypotter/images/thumb/c/c1/Cho_Chang_Profile.JPG/250px-Cho_Chang_Profile.JPG", house = ravenclaw).save()
-
-    Student(name = "Cedric Diggory", image_url = "http://images1.wikia.nocookie.net/__cb20111015180906/harrypotter/images/thumb/c/c5/Cedric.jpg/250px-Cedric.jpg", house = hufflepuff).save()
+    
 
     Student(name = "Draco Malfoy", image_url = "http://images1.wikia.nocookie.net/__cb20100925140918/harrypotter/images/thumb/2/21/Dracodh.jpg/250px-Dracodh.jpg", house = slytherin).save()
     Student(name = "Pansy Parkinson", image_url = "http://images1.wikia.nocookie.net/__cb20110801070343/harrypotter/images/thumb/6/62/Pansyinfobox.jpg/250px-Pansyinfobox.jpg", house = slytherin).save()
