@@ -13,7 +13,7 @@ class UserDataSerializer(serializers.ModelSerializer):
         model = UserData
         fields = '__all__'
 
-class ConditionsDataSerializer(serializers.ModelSerializer):
+class ConditionsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Conditions
