@@ -31,135 +31,135 @@ def seed(apps, schema_editor):
     
     # Conditions
 
-    Condition(
+    Conditions(
         condition = 'Attention Deficit', primary_chakra = 6, secondary_chakra = 5, tertiary_chakra = 4
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Alcohol Abuse', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 4
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Allergies', primary_chakra = 3, secondary_chakra = 4, tertiary_chakra = 5
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Anxiety', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 3
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Back Pain, Lower', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 3
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Back Pain, Middle', primary_chakra = 2, secondary_chakra = 3, tertiary_chakra = 4
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Back Pain, Upper', primary_chakra = 3, secondary_chakra = 4, tertiary_chakra = 5
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Eating Disorder', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 3
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Cholesterol', primary_chakra = 3, secondary_chakra = 4, tertiary_chakra = 5
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Cold-Flu', primary_chakra = 3, secondary_chakra = 4, tertiary_chakra = 5
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Constipation', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 3
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Depression', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 4
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Diarrhea', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 4
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Edema', primary_chakra = 3, secondary_chakra = 4, tertiary_chakra = 5
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Erectile Dysfunction', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 3
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Heartburn', primary_chakra = 2, secondary_chakra = 3, tertiary_chakra = 5
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Hypertension', primary_chakra = 2, secondary_chakra = 3, tertiary_chakra = 4
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Infertility', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 4
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Irritable Bowel Disease (IBD)', primary_chakra = 2, secondary_chakra = 3, tertiary_chakra = 4
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Irritable Bowel Syndrom (IBS)', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 4
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Joint Pain', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 3
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Menstrual Issues', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 3
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Headaches', primary_chakra = 6, secondary_chakra = 5, tertiary_chakra = 4
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Sinuses', primary_chakra = 5, secondary_chakra = 4, tertiary_chakra = 3
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Fertility Male', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 3
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Fertility Male', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 3
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Fertility Female', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 5
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Rheumatoid Arthritis', primary_chakra = 1, secondary_chakra = 3, tertiary_chakra = 5
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Skin Inflammation', primary_chakra = 3, secondary_chakra = 3, tertiary_chakra = 5
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Sleep Disorders', primary_chakra = 5, secondary_chakra = 6, tertiary_chakra = 7
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Smoking', primary_chakra = 2, secondary_chakra = 3, tertiary_chakra = 4
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Inflammed Throat', primary_chakra = 4, secondary_chakra = 5, tertiary_chakra = 6
     ).save()
 
-    Condition(
+    Conditions(
         condition = 'Overweight', primary_chakra = 1, secondary_chakra = 2, tertiary_chakra = 3
     ).save()
 

@@ -7,7 +7,6 @@ class ChakrasSerializer(serializers.ModelSerializer):
         model = Chakras
         fields = '__all__'
 
-
 class UserDataSerializer(serializers.ModelSerializer):
 
     class Meta:
