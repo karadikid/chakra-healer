@@ -6,24 +6,14 @@ from rest_framework import permissions
 class ChakrasList(generics.ListCreateAPIView):
     queryset = Chakras.objects.all()
     serializer_class = ChakrasSerializer
-    permission_classes = (permissions.IsAuthenticated,)
+    # permission_classes = (permissions.NotAuthenticated,)
 
 class ConditionsList(generics.ListCreateAPIView):
     queryset = Conditions.objects.all()
     serializer_class = ConditionsSerializer
-    permission_classes = (permissions.IsAuthenticated,)
+    # permission_classes = (permissions.NotAuthenticated,)
 
-class ConditionsDetail(generics.ListCreateAPIView):
-    queryset = Conditions.objects.all()
-    serializer_class = ConditionsSerializer
-    permission_classes = (permissions.IsAuthenticated,)
-
-class UserList(generics.RetrieveUpdateDestroyAPIView):
+class UserList(generics.ListCreateAPIView):
     queryset = UserData.objects.all()
     serializer_class = UserDataSerializer
-    permission_classes = (permissions.IsAuthenticated,)
-
-class UserDetails(generics.RetrieveUpdateDestroyAPIView):
-    queryset = UserData.objects.all()
-    serializer_class = UserDataSerializer
-    permission_classes = (permissions.IsAuthenticated,)
+    # permission_classes = (permissions.NotAuthenticated,)
